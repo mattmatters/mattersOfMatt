@@ -1,0 +1,178 @@
+$hero-background: black;
+$filter-color: blue;
+$background: #ffeeb0;
+
+// Settings
+h1, h2 {
+  font-family: 'Bungee Inline', cursive;
+}
+h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Effects
+@keyframes flicker{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      opacity:random();
+    }
+  }
+}
+
+// Classes
+.hero{
+  background: linear-gradient(-55deg,
+                              #ffeeb0 30%,
+                              #a2d49f 30%,
+                              #a2d49f 40%,
+                              #c7c12f 40%,
+                              #c7c12f 50%,
+                              #f26247 50%,
+                              #f26247 60%,
+                              #ec2045 60%,
+                              #ec2045 70%,
+                              #ffeeb0 70%
+                             );
+  background-attachment: fixed;
+  height:100vh;
+  margin-top:10px;
+  position:relative;
+  overflow:hidden;
+
+  // flicker
+  &::after{
+    content:" ";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:transparentize($filter-color,0.9);
+    opacity:0;
+    z-index:2;
+    pointer-events:none;
+  }
+  // scanlines
+  &::before{
+    content:" ";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:linear-gradient(transparentize($filter-color,1) 50%, transparentize(darken($filter-color,10),0.75) 50%), linear-gradient(90deg,transparentize(#ff0000,0.94),transparentize(#00ff00,0.98),transparentize(#0000ff,0.94));
+    z-index:2;
+    background-size:100% 2px, 3px 100%;
+    pointer-events:none;
+  }
+}
+
+/* Turning this off for now
+.hero::after{
+  animation:flicker 0.15s infinite;
+}
+*/
+.hero-brand {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+}
+
+.hero-subtitle {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  right: 10%;
+}
+
+.hero h1 {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 300%;
+  color: #a2d49f;
+}
+
+.hero h3 {
+  color: red;
+  font-family: 'Bungee Inline', cursive;
+}
+
+
+.padding-top-bottom {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.App-header {
+  padding: 20px;
+  font-family: 'Monoton', cursive;
+}
+.App-intro {
+  font-size: large;
+}
+
+.skills {
+  border-top-style: solid;
+  border-top-width: 4px;
+  background-color:  #a2d49f;
+}
+
+.skill {
+  margin: 0 auto;
+}
+
+.skill h1, h2, h3, h4, p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.skill img {
+  width: 25%;
+  height: 25%;
+  margin: 0 auto;
+}
+
+.user-table td, th {
+    padding: 5px;
+    width: 50%;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #CCC;
+}
+
+.skills.row div:nth-child(even):hover {
+  background-color: #CCF;
+}
+
+.user-table tbody tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+.user-table tbody tr:nth-child(odd):hover {
+  background-color: #FFC;
+}
+
+.user-table #user-table-header {
+  background-color: yellow;
+}
+
+// Utility classes
+.center {
+  margin: 0 auto;
+}
+
+.fill-parent {
+  width: 100%;
+}
+
+.img-profile {
+  max-width: 50px;
+  max-height: 50px;
+}
