@@ -1,6 +1,6 @@
-# [campLeaderboard](https://mattmatters.github.io/leaderboard-redux/)
+# [Matters of Matt](http://www.themattersofmatt.com/)
 
-This is an experimentation in using asyncronous actions in redux.  Here it requests [these](https://fcctop100.herokuapp.com/api/fccusers/top/recent) [two](https://fcctop100.herokuapp.com/api/fccusers/top/alltime) json files and then uses react to re-render the view.
+This is my never-ending quest to improve myself with graphic design.
 
 
 ## Installation
@@ -8,8 +8,8 @@ This is an experimentation in using asyncronous actions in redux.  Here it reque
 Assuming you already have yarn:
 
 ```sh
-git clone "https://github.com/mattmatters/leaderboard-redux.git"
-cd leaderboard-redux
+git clone "https://github.com/mattmatters/mattersOfMatt.git"
+cd mattersOfMatt
 yarn install
 ```
 
