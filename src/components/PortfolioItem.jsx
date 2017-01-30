@@ -9,24 +9,25 @@ const propTypes = {
 };
 
 const PortfolioItem = ({ title, img, description, link, ghLink }) => (
-  <div className="skill col-xs-10 col-md-4">
+  <div className={`port-item col-xs-10 col-md-4 ${img}`}>
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <h4 className="text-center"> {title} </h4>
-      <img className="center-block"src={img} alt={`Whoops this should be ${title}`} />
+      <h2 className="text-center"> {title} </h2>
     </a>
-    <div className="row center-block">
+    <p className="container text-center bg-box"> {description} </p>
+    <div className="row">
       <div className={ghLink ? 'col-xs-6' : 'col-xs-12'}>
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <button> Check it out </button>
+          <button className="center-block"> Check it out </button>
         </a>
       </div>
       <div className={ghLink ? 'col-xs-6' : 'hidden'}>
         <a href={ghLink} target="_blank" rel="noopener noreferrer">
-          <button> <i className="fa fa-github" aria-hidden="true" /> Source Code </button>
+          <button className="center-block"> <i className="fa fa-github" aria-hidden="true" />
+            Source Code
+          </button>
         </a>
       </div>
     </div>
-    <p> {description} </p>
   </div>
 );
 

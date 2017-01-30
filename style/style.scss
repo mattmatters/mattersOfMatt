@@ -120,42 +120,49 @@ p {
 
 .skill {
   margin: 0 auto;
-}
-
-.skill h1, h2, h3, h4, p {
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-.skill img {
-  width: 25%;
-  height: 25%;
-  margin: 0 auto;
-}
-
-.user-table td, th {
-    padding: 5px;
-    width: 50%;
-}
-
-.user-table tr:nth-child(even) {
-  background-color: #CCC;
+  min-height: 100%;
+  h1, h2, h3, h4, p {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  img {
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+  }
 }
 
 .skills.row div:nth-child(even):hover {
   background-color: #CCF;
 }
 
-.user-table tbody tr:nth-child(odd) {
-  background-color: #FFF;
+.port-item {
+  h1, h2, h3, h4 {
+    padding-top: 10px;
+    padding-bottom: 200px;
+  }
+  min-height: 400px;
+  min-width: 100%;
+  button {
+    width: 75%;
+    font-size: 24px;
+  }
+  p {
+    color: white;
+  }
 }
 
-.user-table tbody tr:nth-child(odd):hover {
-  background-color: #FFC;
+.bg-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  border-radius: 25px;
 }
 
-.user-table #user-table-header {
-  background-color: yellow;
+.grandma {
+  background-image: url(../public/red-riding-hood.gif);
+}
+.skill h1, .skill h2, skill h3, .skill h4 {
+  padding-bottom: 40px;
 }
 
 // Utility classes
