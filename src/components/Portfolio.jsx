@@ -26,21 +26,21 @@ const Portfolio = () => (
     />
     <PortfolioItem title="Leaderboard-Redux"
                    link="https://github.com/mattmatters/calculator-redux"
-                   ghLink="https://github.com/mattmatters/calculator-redux"
+                   ghLink="https://github.com/mattmatters/leaderboard-redux"
                    img="grandma"
-                   description="Chainable calculator build in React-Redux"
+                   description="React-Redux Experiment with asynchronous operations"
     />
-    <PortfolioItem title="Calculator-Redux"
+    <PortfolioItem title="Lou Reed Tribute"
                    link="https://github.com/mattmatters/calculator-redux"
-                   ghLink="https://github.com/mattmatters/calculator-redux"
+                   ghLink="https://github.com/mattmatters/louReedTributeSite"
                    img="grandma"
-                   description="Chainable calculator build in React-Redux"
+                   description="Experiment in creating a website utilizing only Bootstrap as a stylesheet"
     />
-    <PortfolioItem title="Calculator-Redux"
+    <PortfolioItem title="Markdown Preview"
                    link="https://github.com/mattmatters/calculator-redux"
-                   ghLink="https://github.com/mattmatters/calculator-redux"
+                   ghLink="https://github.com/mattmatters/markdownPreview"
                    img="grandma"
-                   description="Chainable calculator build in React-Redux"
+                   description="Auto-updating Markdown to HTML converter"
     />
   </Carousel>
 );
