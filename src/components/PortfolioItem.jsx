@@ -13,20 +13,13 @@ const PortfolioItem = ({ title, img, description, link, ghLink }) => (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <h2 className="text-center"> {title} </h2>
     </a>
-    <p className="container text-center bg-box"> {description} </p>
-    <div className="row">
-      <div className={ghLink ? 'col-xs-6' : 'col-xs-12'}>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <button className="center-block"> Check it out </button>
-        </a>
-      </div>
-      <div className={ghLink ? 'col-xs-6' : 'hidden'}>
+    <div className="container text-center bg-box">
+      <p> {description} </p>
+      <p className={ghLink ? 'gh-link' : 'hidden'} >
         <a href={ghLink} target="_blank" rel="noopener noreferrer">
-          <button className="center-block"> <i className="fa fa-github" aria-hidden="true" />
-            Source Code
-          </button>
+          <i className="fa fa-github" aria-hidden="true" />
         </a>
-      </div>
+      </p>
     </div>
   </div>
 );

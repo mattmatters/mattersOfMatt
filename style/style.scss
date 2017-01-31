@@ -1,6 +1,10 @@
 $hero-background: black;
 $filter-color: blue;
 $background: #ffeeb0;
+$background2: #a2d49f;
+$background3: #c7c12f;
+$background4: #f26247;
+$background5: #ec2045;
 $fargglad:#722872;
 $morkfarg:#592059;
 $morkgra:#888;
@@ -30,7 +34,7 @@ p {
 // Classes
 nav {
   font-size: 13px;
-  background:$fargglad;
+  background:$background5;
   -webkit-transition:all .3s;
   -moz-transition:all .3s;
   transition:all .3s;
@@ -47,6 +51,7 @@ nav {
   }
   .navbar-brand {
     font-family: 'Bungee Inline', cursive;
+    font-size: 32px;
   }
   li{
     height:100%;
@@ -71,16 +76,16 @@ nav {
 
 .hero{
     background: linear-gradient(-55deg,
-                                #ffeeb0 30%,
-                                #a2d49f 30%,
-                                #a2d49f 40%,
-                                #c7c12f 40%,
-                                #c7c12f 50%,
-                                #f26247 50%,
-                                #f26247 60%,
-                                #ec2045 60%,
-                              #ec2045 70%,
-                              #ffeeb0 70%
+                                $background 30%,
+                                $background2 30%,
+                                $background2 40%,
+                                $background3 40%,
+                                $background3 50%,
+                                $background4 50%,
+                                $background4 60%,
+                                $background5 60%,
+                                $background5 70%,
+                                $background 70%
                              );
   background-attachment: fixed;
   height:100vh;
@@ -118,30 +123,9 @@ nav {
   }
 }
 
-.hero-brand {
-  position: absolute;
-  top: 10%;
-  left: 7%;
-}
+#portfolio {
 
-.hero-subtitle {
-  position: absolute;
-  top: 65%;
-  left: 60%;
-  right: 10%;
 }
-
-.hero h1 {
-  font-family: 'Bungee Inline', cursive;
-  font-size: 300%;
-  color: #a2d49f;
-}
-
-.hero h3 {
-  color: red;
-  font-family: 'Bungee Inline', cursive;
-}
-
 
 .padding-top-bottom {
   padding-bottom: 20px;
@@ -159,7 +143,7 @@ nav {
 .skills {
   border-top-style: solid;
   border-top-width: 4px;
-  background-color:  #a2d49f;
+  background-color:  $background4;
 }
 
 .skill {
@@ -197,12 +181,17 @@ nav {
 
 .bg-box {
   background: rgba(0, 0, 0, 0.7);
-  padding: 25px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   border-radius: 25px;
 }
 
 .grandma {
   background-image: url(../public/red-riding-hood.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $background3;
 }
 
 .calc {
@@ -210,8 +199,12 @@ nav {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: $background3;
 }
 
+.gh-link {
+  font-size: 30px;
+}
 
 // Utility classes
 .center {

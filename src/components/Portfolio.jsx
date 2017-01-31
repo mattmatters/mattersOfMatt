@@ -7,7 +7,7 @@ import grandma from '../../public/red-riding-hood.gif';
 const carouselConfig = {
   autoplay: true,
   wrapAround: true,
-
+  decorators: [],
 };
 
 const Portfolio = () => (

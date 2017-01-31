@@ -16,7 +16,7 @@ const NavBar = () => (
           <span className="icon-bar" />
         </button>
         <a className="navbar-brand" href="#hero">
-          <b>Matt Matters</b>
+          Matt Matters
         </a>
       </div>
       <div id="navbar-content" className="navbar-right collapse navbar-collapse">
