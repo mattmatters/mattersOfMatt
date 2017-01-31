@@ -8,7 +8,7 @@ import aws from '../../public/AmazonWebservices_Logo.svg';
 import upload from '../../public/upload.svg';
 
 const Skills = () => (
-  <div className="container-fluid skills padding-top-bottom">
+  <div id="skills" className="container-fluid skills padding-top-bottom">
     <div className="container">
       <h2 className="text-center"> Skills </h2>
       <div className="row">

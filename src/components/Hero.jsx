@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hero = () => (
-  <div className="hero padding-top-bottom">
+  <div id="hero" className="hero padding-top-bottom">
     <div className="hero-brand">
       <h1 className="text-left">  Matt <br /> Matters </h1>
     </div>

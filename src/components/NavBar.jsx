@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NavBar = () => (
-  <nav className="navbar navbar-inverse navbar-fixed-top">
+  <nav className="navbar navbar-fixed-top">
     <div className="container-fluid">
       <div className="navbar-header">
         <button
@@ -15,16 +15,15 @@ const NavBar = () => (
           <span className="icon-bar" />
           <span className="icon-bar" />
         </button>
-        <a className="navbar-brand" href="#slk">
+        <a className="navbar-brand" href="#hero">
           <b>Matt Matters</b>
         </a>
       </div>
       <div id="navbar-content" className="navbar-right collapse navbar-collapse">
         <ul className="nav navbar-nav">
-          <li> Home </li>
-          <li> Skills </li>
-          <li> About Me </li>
-          <li> Portfolio </li>
+          <li> <a href="#skills"> Skills </a> </li>
+          <li> <a href="#portfolio"> Portfolio </a> </li>
+          <li> <a href="#contact"> Contact </a> </li>
         </ul>
       </div>
     </div>

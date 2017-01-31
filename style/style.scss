@@ -1,6 +1,9 @@
 $hero-background: black;
 $filter-color: blue;
 $background: #ffeeb0;
+$fargglad:#722872;
+$morkfarg:#592059;
+$morkgra:#888;
 
 // Settings
 h1, h2 {
@@ -25,16 +28,57 @@ p {
 }
 
 // Classes
+nav {
+  font-size: 13px;
+  background:$fargglad;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  transition:all .3s;
+  @media(max-width:768px){
+    padding:5px;
+    text-align:center;
+    margin:0 auto;
+    width:120%;
+    .active a{
+      color:$fargglad;
+      background:#bbb;
+      box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .navbar-brand {
+    font-family: 'Bungee Inline', cursive;
+  }
+  li{
+    height:100%;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+    display:inline-flex;
+    a{
+      color:#ffffff;
+      padding:10px 20px;
+      &:hover{
+        color:$fargglad;
+        background:#bbb;
+        box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+        }
+      }
+  }
+  .navbar-toggle {
+      margin-right:0;
+  }
+}
+
 .hero{
-  background: linear-gradient(-55deg,
-                              #ffeeb0 30%,
-                              #a2d49f 30%,
-                              #a2d49f 40%,
-                              #c7c12f 40%,
-                              #c7c12f 50%,
-                              #f26247 50%,
-                              #f26247 60%,
-                              #ec2045 60%,
+    background: linear-gradient(-55deg,
+                                #ffeeb0 30%,
+                                #a2d49f 30%,
+                                #a2d49f 40%,
+                                #c7c12f 40%,
+                                #c7c12f 50%,
+                                #f26247 50%,
+                                #f26247 60%,
+                                #ec2045 60%,
                               #ec2045 70%,
                               #ffeeb0 70%
                              );
@@ -121,9 +165,8 @@ p {
 .skill {
   margin: 0 auto;
   min-height: 100%;
-  h1, h2, h3, h4, p {
+  h4 {
     padding-top: 5px;
-    padding-bottom: 10px;
   }
   img {
     width: 25%;
@@ -161,9 +204,14 @@ p {
 .grandma {
   background-image: url(../public/red-riding-hood.gif);
 }
-.skill h1, .skill h2, skill h3, .skill h4 {
-  padding-bottom: 40px;
+
+.calc {
+  background-image: url(../public/calc.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 // Utility classes
 .center {
