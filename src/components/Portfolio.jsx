@@ -11,7 +11,7 @@ const carouselConfig = {
 };
 
 const Portfolio = () => (
-  <Carousel id="portfolio" {...carouselConfig}>
+  <Carousel {...carouselConfig}>
     <PortfolioItem title="Calculator-Redux"
                    link="https://github.com/mattmatters/calculator-redux"
                    ghLink="https://github.com/mattmatters/calculator-redux"
