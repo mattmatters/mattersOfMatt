@@ -23,7 +23,7 @@ const NavBar = () => (
         <ul className="nav navbar-nav">
           <li> <a href="#skills"> Skills </a> </li>
           <li> <a href="#portfolio"> Portfolio </a> </li>
-          <li> <a href="#contact"> Contact </a> </li>
+          <li> <a href="mailto:domattthings@gmail.com"> Contact </a> </li>
         </ul>
       </div>
     </div>
