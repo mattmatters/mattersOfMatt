@@ -26,7 +26,7 @@ const Portfolio = () => (
                      description="Website design and DNS management"
       />
       <PortfolioItem title="Leaderboard-Redux"
-                     link="https://github.com/mattmatters/calculator-redux"
+                     link="http://campleaderboard.com.s3-website-us-east-1.amazonaws.com/"
                      ghLink="https://github.com/mattmatters/leaderboard-redux"
                      img="leaderboard"
                      description="React-Redux Experiment with asynchronous operations"
@@ -38,7 +38,7 @@ const Portfolio = () => (
                      description="Experiment in creating a website utilizing only Bootstrap as a stylesheet"
       />
       <PortfolioItem title="Markdown Preview"
-                     link="https://github.com/mattmatters/calculator-redux"
+                     link="http://markdownpreview.com.s3-website-us-east-1.amazonaws.com/"
                      ghLink="https://github.com/mattmatters/markdownPreview"
                      img="markdown"
                      description="Auto-updating Markdown to HTML converter"
