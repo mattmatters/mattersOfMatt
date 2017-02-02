@@ -124,6 +124,21 @@ nav {
   }
 }
 
+.hero-content {
+  margin-top: 10%;
+  img {
+    max-width: 250px;
+    padding-bottom: 30px;
+  }
+  p {
+    color: #ffffff;
+    font-size: 26px;
+  }
+  a {
+    padding: 10px;
+  }
+}
+
 #portfolio {
 
 }
@@ -261,4 +276,16 @@ nav {
 .img-profile {
   max-width: 50px;
   max-height: 50px;
+}
+
+#footer {
+  background-color: #000000;
+  padding: 20px;
+  p {
+    color: #ffffff;
+  }
+  .social-links a {
+    padding: 15px;
+    font-size: 20px;
+  }
 }
