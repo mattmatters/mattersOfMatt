@@ -11,14 +11,18 @@ const Hero = () => (
         <p className="text-left">
           Full-Stack Web Engineer specializing in creative and out-of-the-box solutions.
         </p>
-        <p className="text-center">
-          <a href="https://github.com/mattmatters" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-github" aria-hidden="true" />
-          </a>
-          <a href="https://www.linkedin.com/in/doingmattstuff" target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-linkedin" aria-hidden="true" />
-          </a>
-        </p>
+        <ul className="social-list">
+          <li className="social-list__icon">
+            <a href="https://github.com/mattmatters" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-github" aria-hidden="true" />
+            </a>
+          </li>
+          <li className="social-list__icon social-list__icon--end">
+            <a href="https://www.linkedin.com/in/doingmattstuff" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-linkedin" aria-hidden="true" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
