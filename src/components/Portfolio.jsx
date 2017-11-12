@@ -2,7 +2,6 @@
 import React from 'react';
 import Carousel from 'nuka-carousel';
 import PortfolioItem from '../components/PortfolioItem';
-import grandma from '../../public/red-riding-hood.gif';
 
 const carouselConfig = {
   autoplay: true,
