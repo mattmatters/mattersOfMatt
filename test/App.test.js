@@ -5,59 +5,50 @@ import { describe, it } from 'mocha';
 import { should } from 'chai';
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from '../src/containers/appContainer';
-import { MOO, moo } from '../src/actions/index';
-// import mooReducer from '../src/reducers/mooReducer';
-import { mapStateToProps } from '../src/containers/UserListContainer';
-import User from '../src/components/User';
+import Skill from '../src/components/Skill';
+import NavBar from '../src/components/NavBar';
+import Skills from '../src/components/Skills';
+import Portfolio from '../src/components/Portfolio';
+import App from '../src/components/App';
+import Footer from '../src/components/Footer';
 
 should();
-/*
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-});
-*/
-
-// Actions
-describe('Actions', () => {
-  it('should return MOO action', () => {
-    moo().should.be.deep.equal({
-      type: MOO,
-    });
-  });
-});
-
-/*
-// Reducers
-describe('Reducers', () => {
-  describe('mooReducer', () => {
-    it('should initialize empty', () => {
-      mooReducer(undefined, 'INIT').should.be.deep.equal({ cowText: '' });
-    });
-    it('should append moo to text', () => {
-      mooReducer({ cowText: 'cow' }, { type: MOO }).should.be.deep.equal({ cowText: 'cowmoo' });
-    });
-  });
-});
-*/
-
 // Components
 describe('Components', () => {
-  describe('User', () => {
-    const wrapper = shallow(<User username="poop" lastupdate="never" allTime={23} recent={2} />);
+  describe('Skill', () => {
+    const wrapper = shallow(<Skill title="poop" img="dlkj" description="cool" />);
     it('renders without exploding', () => {
       wrapper.should.have.length(1);
     });
   });
-});
-
-
-// Containers
-describe('Containers', () => {
-  describe('appContainer', () => {
-    it('should map props', () => {
-      mapStateToProps({ mooReducer: { cowText: '' } }).should.be.deep.equal({ text: '' });
+  describe('Skills', () => {
+    const wrapper = shallow(<Skills />);
+    it('renders without exploding', () => {
+      wrapper.should.have.length(1);
+    });
+  });
+  describe('NavBar', () => {
+    const wrapper = shallow(<NavBar />);
+    it('renders without exploding', () => {
+      wrapper.should.have.length(1);
+    });
+  });
+  describe('Portfolio', () => {
+    const wrapper = shallow(<Portfolio />);
+    it('renders without exploding', () => {
+      wrapper.should.have.length(1);
+    });
+  });
+  describe('Footer', () => {
+    const wrapper = shallow(<Footer />);
+    it('renders without exploding', () => {
+      wrapper.should.have.length(1);
+    });
+  });
+  describe('App', () => {
+    const wrapper = shallow(<App />);
+    it('renders without exploding', () => {
+      wrapper.should.have.length(1);
     });
   });
 });
