@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
   <div id="footer">
     <p className="text-center">
-      Designed and developed by <a href="http://themattersofmatt.com"> Matt Lewis </a>
+      Designed and developed by <a href="https://mattmatters.io">Matt Lewis</a>
     </p>
     <p className="text-center social-links">
       <a href="https://github.com/mattmatters" target="_blank" rel="noopener noreferrer">
