@@ -1,7 +1,6 @@
-# [Matters of Matt](http://www.themattersofmatt.com/) [![build](https://travis-ci.org/mattmatters/mattersOfMatt.svg?branch=master)](https://travis-ci.org/mattmatters/mattersOfMatt)
+# [Matters of Matt](http://www.themattersofmatt.com/) [![build](https://travis-ci.org/mattmatters/mattersOfMatt.svg?branch=master)](https://travis-ci.org/mattmatters/mattersOfMatt) [![Website Status](https://img.shields.io/website-up-down-green-red/https/celebraphone.io.svg?label=WebsiteStatus)](https://themattersofmatt.com)
 
-This is my never-ending quest to improve myself with graphic design.
-
+This is my _never-ending_ quest to improve myself with graphic design.
 
 ## Installation
 
